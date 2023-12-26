@@ -23,18 +23,31 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: lightblue
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
+/* header {
 
+} */
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  
+  
 }
 
-footer {
+/* footer {
 
+} */
+
+section {
+  padding: 20px;
 }
 
 /******************************************
@@ -45,6 +58,13 @@ button {
   min-width: 100px;
   margin: 10px;
   font-size: 2rem;
+  background-color: #efefef;
+  border: 1px solid lightblue ;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: lightblue;
 }
 
 span {
@@ -53,5 +73,5 @@ span {
 }
 
 section {
-  border: 1px solid lightgray;
+  border: 5px solid lightblue;
 }
