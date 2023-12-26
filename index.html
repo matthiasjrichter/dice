@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Dice</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<section>
+			<button id="d4Button">Roll d4</button>
+			<span id="d4Result"></span>
+			<br>
+			<button id="d6Button">Roll d6</button>
+			<span id="d6Result"></span>
+			<br>
+			<button id="d8Button">Roll d8</button>
+			<span id="d8Result"></span>
+			<br>
+			<button id="d10Button">Roll d10</button>
+			<span id="d10Result"></span>
+			<br>
+			<button id="d12Button">Roll d12</button>
+			<span id="d12Result"></span>
+			<br>
+			<button id="d20Button">Roll d20</button>
+			<span id="d20Result"></span>
+			<br>
+		</section>
+		
+		<section>
+			<button id="add1">+1</button> 
+			<button id="add2">+2</button>
+			<button id="add3">+3</button>
+			<button id="add4">+4</button>
+			<button id="add5">+5</button>
+			<br>
+
+			<button id="sub1">-1</button> 
+			<button id="sub2">-2</button>
+			<button id="sub3">-3</button>
+			<button id="sub4">-4</button>
+			<button id="sub5">-5</button>
+			<br>
+		</section>
+
+		<section>
+			<span>Results: <span id="results"></span></span>
+
+			<br>
+
+			<span id="sumDice">Total:</span>
+			<span id="sumResult"></span>
+
+			<br>
+
+			<button id="reset" onclick="location.href='index.html'" type="button">RESET</button>
+		</section>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
