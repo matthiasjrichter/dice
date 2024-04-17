@@ -8,12 +8,11 @@ function rollDice(dice, showResult) {
   if (validDice.includes(dice)) {
     result = 1 + Math.floor(Math.random() * dice);
   } else alert("Invalid Input");
-
-  document.querySelector(showResult).innerText += result + "|";
+  document.querySelector(showResult).innerText += "[" + result + "]";
 
   resultsArr.push(result); //to sum it later
-  document.querySelector("#results").innerText = resultsArr.join("|") + "|";
-
+  // document.querySelector("#results").innerText = resultsArr.join("|") + "|";
+  document.querySelector("#results").innerText = "[" + resultsArr.join("][") + "]";
   sumDice(); //automagically updates sum
 }
 
@@ -41,7 +40,8 @@ const sub5 = () => add(-5);
 //ADD BONI/MALI
 function add(bonus) {
   resultsArr.push(bonus);
-  document.querySelector("#results").innerText = resultsArr.join("|") + "|";
+  // document.querySelector("#results").innerText = resultsArr.join("|") + "|";
+  document.querySelector("#results").innerText = "[" + resultsArr.join("][") + "]";
   sumDice(); //automagically updates sum
 }
 
